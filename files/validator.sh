@@ -15,6 +15,7 @@ exec /mnt/solana/target/release/solana-validator \
 --no-voting \
 --private-rpc \
 --rpc-bind-address 0.0.0.0 \
+--account-index program-id \
 --wal-recovery-mode skip_any_corrupted_record \
 --log /mnt/logs/solana-validator.log \
 --accounts /mnt/solana-accounts \
