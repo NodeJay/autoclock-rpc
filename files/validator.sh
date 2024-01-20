@@ -15,9 +15,6 @@ exec /mnt/solana/target/release/solana-validator \
 --no-voting \
 --private-rpc \
 --rpc-bind-address 0.0.0.0 \
---enable-cpi-and-log-storage \
---account-index program-id \
---enable-rpc-transaction-history \
 --wal-recovery-mode skip_any_corrupted_record \
 --log /mnt/logs/solana-validator.log \
 --accounts /mnt/solana-accounts \
@@ -27,7 +24,7 @@ exec /mnt/solana/target/release/solana-validator \
 --limit-ledger-size 400000000 \
 --rpc-send-default-max-retries 3 \
 --rpc-send-service-max-retries 3 \
---rpc-send-retry-ms 2000 \
+--rpc-send-retry-ms 500 \
 --full-rpc-api \
 --accounts-index-memory-limit-mb 350 \
 --account-index-exclude-key kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6 \
@@ -44,4 +41,10 @@ exec /mnt/solana/target/release/solana-validator \
 --known-validator Certusm1sa411sMpV9FPqU5dXAYhmmhygvxJ23S6hJ24 \
 --known-validator 9bkyxgYxRrysC1ijd6iByp9idn112CnYTw243fdH2Uvr \
 --known-validator 12ashmTiFStQ8RGUpi1BTCinJakVyDKWjRL6SWhnbxbT \
---known-validator FdaysQ2BZWUGBy8nqFgiudnrhzJp4xChQ8B4zJdc2JZB
+--known-validator FdaysQ2BZWUGBy8nqFgiudnrhzJp4xChQ8B4zJdc2JZB \
+--known-validator 7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2 \
+--known-validator GdnSyH3YtwcxFvQrVVJMm1JhTS4QVX7MFsX56uJLUfiZ \
+--known-validator DE1bawNcRJB9rVm3buyMVfr8mBEoyyu73NBovf2oXJsJ \
+--known-validator CakcnaRDHka2gXyfbEd2d3xsvkJkqsLw2akB3zsN1D2S \
+--known-validator CMPSSdrTnRQBiBGTyFpdCc3VMNuLWYWaSkE8Zh5z6gbd \
+--known-validator 6WgdYhhGE53WrZ7ywJA15hBVkw7CRbQ8yDBBTwmBtAHN 
