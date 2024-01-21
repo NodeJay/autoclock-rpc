@@ -1,6 +1,6 @@
 ---
 # defaults file for Solana RPC
-solana_version: "v1.17.16"
+solana_version: "v1.16.24"
 ledger_disk: "nvme2n1"
 setup_disks: "true"
 download_snapshot: "true"
