@@ -8,7 +8,7 @@ exec /mnt/solana/target/release/solana-validator \
 --entrypoint entrypoint4.mainnet-beta.solana.com:8001 \
 --entrypoint entrypoint5.mainnet-beta.solana.com:8001 \
 --rpc-port 8899 \
---dynamic-port-range 8002-8099 \
+--dynamic-port-range 8000-8099 \
 --no-port-check \
 --halt-on-trusted-validators-accounts-hash-mismatch \
 --gossip-port 8001 \
@@ -25,8 +25,8 @@ exec /mnt/solana/target/release/solana-validator \
 --limit-ledger-size 400000000 \
 --rpc-send-retry-ms 100 \
 --full-rpc-api \
---tpu-disable-quic \
---rpc-send-leader-count 3 \
+--tpu-use-quic \
+--rpc-send-leader-count 4 \
 --rpc-bigtable-timeout 600 \
 --rpc-pubsub-max-connections 1000 \
 --rpc-pubsub-enable-vote-subscription \
