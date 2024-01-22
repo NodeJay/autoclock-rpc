@@ -25,7 +25,6 @@ exec /mnt/solana/target/release/solana-validator \
 --limit-ledger-size 400000000 \
 --rpc-send-retry-ms 100 \
 --full-rpc-api \
---tpu-disable-quic \
 --rpc-pubsub-worker-threads 10 \
 --tpu-connection-pool-size 10 \
 --rpc-send-leader-count 4 \
