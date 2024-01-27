@@ -22,7 +22,7 @@ exec /mnt/solana/target/release/solana-validator \
 --ledger /mnt/solana-ledger \
 --snapshots /mnt/solana-snapshots \
 --expected-genesis-hash 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d \
---limit-ledger-size 400000000 \
+--limit-ledger-size 200000000 \
 --rpc-send-retry-ms 200 \
 --full-rpc-api \
 --tpu-use-quic \
@@ -30,7 +30,7 @@ exec /mnt/solana/target/release/solana-validator \
 --rpc-bigtable-timeout 600 \
 --rpc-pubsub-max-connections 1000 \
 --rpc-pubsub-enable-vote-subscription \
---accounts-index-memory-limit-mb 350 \
+--accounts-index-memory-limit-mb 150 \
 --account-index-exclude-key kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6 \
 --known-validator PUmpKiNnSVAZ3w4KaFX6jKSjXUNHFShGkXbERo54xjb \
 --known-validator Ninja1spj6n9t5hVYgF3PdnYz2PLnkt7rvaw3firmjs \
