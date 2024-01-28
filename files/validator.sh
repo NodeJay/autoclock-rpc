@@ -22,7 +22,7 @@ exec /mnt/solana/target/release/solana-validator \
 --ledger /mnt/solana-ledger \
 --snapshots /mnt/solana-snapshots \
 --expected-genesis-hash 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d \
---limit-ledger-size 200000000 \
+--limit-ledger-size 400000000 \
 --rpc-send-retry-ms 200 \
 --full-rpc-api \
 --tpu-use-quic \
