@@ -10,7 +10,6 @@ exec /mnt/solana/target/release/solana-validator \
 --rpc-port 8899 \
 --dynamic-port-range 8000-8099 \
 --no-port-check \
---halt-on-trusted-validators-accounts-hash-mismatch \
 --gossip-port 8001 \
 --no-voting \
 --private-rpc \
@@ -23,7 +22,7 @@ exec /mnt/solana/target/release/solana-validator \
 --snapshots /mnt/solana-snapshots \
 --expected-genesis-hash 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d \
 --limit-ledger-size 400000000 \
---rpc-send-retry-ms 200 \
+--rpc-send-retry-ms 100 \
 --full-rpc-api \
 --tpu-use-quic \
 --rpc-send-leader-count 4 \
